@@ -1,10 +1,10 @@
-class Calculator{
-static int a=60;
-static int b=70;
-static int c=20;
-static int d=30;
-static int e=12;
-static int f=3;
+public class Calculator{
+static int a;
+static int b;
+static int c;
+static int d;
+static int e;
+static int f;
 int answer;
 public int add (){
 answer =a+b;
@@ -22,8 +22,18 @@ public int divide(){
 answer =a/d;
 return answer;
 }
+public Calculator(){
+}
+public Calculator(int a,int b,int c,int d,int e,int f){
+this.a=a;
+this.b=b;
+this.c=c;
+this.d=d;
+this.e=e;
+this.f=f;
+}
 public static void main (String[]args){
-Calculator c=new Calculator();
+Calculator c=new Calculator(60,70,20,30,12,3);
   int g=c.add();
   System.out.println(g);
   int h=c.subtract();
